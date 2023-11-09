@@ -1,16 +1,17 @@
-<!--
- Copyright 2023 Kenneth Ossai
- 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
- 
-     http://www.apache.org/licenses/LICENSE-2.0
- 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
-
+<template>
+    <h3>Add new transaction</h3>
+    <form id="form">
+      <div class="form-control">
+        <label for="text">Text</label>
+        <input type="text" id="text" placeholder="Enter text..." />
+      </div>
+      <div class="form-control">
+        <label for="amount"
+          >Amount <br />
+          (negative - expense, positive - income)</label
+        >
+        <input type="text" id="amount" placeholder="Enter amount..." />
+      </div>
+      <button class="btn">Add transaction</button>
+    </form>
+  </template>
